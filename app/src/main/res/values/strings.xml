@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjectDemo</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_name">Rahil</string>
+    <string name="text_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel </string>
+    <string name="email">rahilmerchant99@gmail.com</string>
+    <string name="mobile">9820823645</string>
+    <string name="fav_club">Liverpool</string>
+    <string name="age">19</string>
+
+</resources>

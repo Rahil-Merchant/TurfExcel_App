@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/turfimg"
+                ></ImageView>
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="170dp"
+                android:background="#008A3B"
+                android:text="4.7"
+                android:padding="3dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/turfimg"
+                android:layout_marginTop="7dp"
+                android:text="Orlem Lawn Turf"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Marve Road, Malad West"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/turfdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/textViewShortDesc"
+                android:fontFamily="sans-serif-medium"
+                android:text="4.3"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/turfdistance"
+                android:layout_marginLeft="3dp"
+                android:text="km"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/textViewTitle"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/textViewShortDesc"
+                android:layout_marginLeft="18dp"
+
+                android:src="@drawable/distance"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

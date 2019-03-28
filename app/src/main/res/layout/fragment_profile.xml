@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2ECEA">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        titleTextAppearance="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        app:title="Profile"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tap_cam_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="82dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center_horizontal"
+            android:text="Tap on the icon to set a profile photo"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar_profile"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@null"
+                android:src="@drawable/profileimg" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/verif_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/uname_profile"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/uname"
+            android:ems="10"
+            android:hint="Enter a username"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingLeft="50dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/mob_no_profile"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/uname"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName|phone"
+            android:paddingLeft="50dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fav_club_profile"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/uname"
+            android:ems="10"
+            android:hint="Favourite Club"
+            android:inputType="textPersonName"
+            android:paddingLeft="50dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/age_profile"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/uname"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:paddingLeft="50dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/proceed_profile"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/proceed_btn" />
+
+        <TextView
+            android:id="@+id/prof_resetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Reset Password"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-thin" />
+
+    </LinearLayout>
+
+</RelativeLayout>
